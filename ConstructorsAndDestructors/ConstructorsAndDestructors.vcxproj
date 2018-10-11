@@ -140,6 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Meep.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Meep.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="AmandasCreatation.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

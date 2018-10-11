@@ -10,6 +10,7 @@
 ********************************************************************************************/
 
 #include "raylib.h"
+#include"Meep.h"
 
 int main()
 {
@@ -18,8 +19,9 @@ int main()
 	int screenWidth = 800;
 	int screenHeight = 450;
 
-	InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
-
+	InitWindow(screenWidth, screenHeight, "Ray is a bully");
+	meep mymeep = meep();
+	mymeep = meep(true);
 	SetTargetFPS(60);
 	//--------------------------------------------------------------------------------------
 
@@ -36,8 +38,8 @@ int main()
 		BeginDrawing();
 
 		ClearBackground(RAYWHITE);
-
-		DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+		mymeep.refresh();
+		
 
 		EndDrawing();
 		//----------------------------------------------------------------------------------
