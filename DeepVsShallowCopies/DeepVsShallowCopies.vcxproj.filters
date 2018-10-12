@@ -33,4 +33,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\mappack\PNG\mapTile_001.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="mappack\PNG\mapTile_019.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="mappack\PNG\mapTile_024.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="mappack\PNG\mapTile_027.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>

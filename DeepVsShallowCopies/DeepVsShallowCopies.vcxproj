@@ -139,6 +139,12 @@
     <ClInclude Include="MasterTile.h" />
     <ClInclude Include="Tile.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\mappack\PNG\mapTile_001.png" />
+    <Image Include="mappack\PNG\mapTile_019.png" />
+    <Image Include="mappack\PNG\mapTile_024.png" />
+    <Image Include="mappack\PNG\mapTile_027.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

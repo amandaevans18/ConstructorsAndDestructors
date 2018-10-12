@@ -8,10 +8,12 @@ class MasterTile
 {
 public:
 
-	Tile * types;
-	int * grid;
-	int rows = 100;
-	int colums = 100;
+	Tile types[3];
+	int ** grid;
+	int rows;
+	int colums;
 
 	MasterTile();
+	MasterTile(Tile _types,int _grid[5][4],int _rows,int _colums);
+	void draw();
 };
