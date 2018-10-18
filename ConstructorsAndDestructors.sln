@@ -13,6 +13,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConversionsAndCasting", "Co
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WizBarCorps", "WizBarCorps\WizBarCorps.vcxproj", "{A1C847EE-EFB6-43BA-A67D-0149A24C0C54}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Inheritance", "Inheritance\Inheritance.vcxproj", "{29692871-307E-41F8-8224-3AC5EDE39D7E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ButtonMakerInheritanceP2", "ButtonMakerInheritanceP2\ButtonMakerInheritanceP2.vcxproj", "{6F519D43-56C0-45F0-BC95-3FF628CF348B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +65,22 @@ Global
 		{A1C847EE-EFB6-43BA-A67D-0149A24C0C54}.Release|x64.Build.0 = Release|x64
 		{A1C847EE-EFB6-43BA-A67D-0149A24C0C54}.Release|x86.ActiveCfg = Release|Win32
 		{A1C847EE-EFB6-43BA-A67D-0149A24C0C54}.Release|x86.Build.0 = Release|Win32
+		{29692871-307E-41F8-8224-3AC5EDE39D7E}.Debug|x64.ActiveCfg = Debug|x64
+		{29692871-307E-41F8-8224-3AC5EDE39D7E}.Debug|x64.Build.0 = Debug|x64
+		{29692871-307E-41F8-8224-3AC5EDE39D7E}.Debug|x86.ActiveCfg = Debug|Win32
+		{29692871-307E-41F8-8224-3AC5EDE39D7E}.Debug|x86.Build.0 = Debug|Win32
+		{29692871-307E-41F8-8224-3AC5EDE39D7E}.Release|x64.ActiveCfg = Release|x64
+		{29692871-307E-41F8-8224-3AC5EDE39D7E}.Release|x64.Build.0 = Release|x64
+		{29692871-307E-41F8-8224-3AC5EDE39D7E}.Release|x86.ActiveCfg = Release|Win32
+		{29692871-307E-41F8-8224-3AC5EDE39D7E}.Release|x86.Build.0 = Release|Win32
+		{6F519D43-56C0-45F0-BC95-3FF628CF348B}.Debug|x64.ActiveCfg = Debug|x64
+		{6F519D43-56C0-45F0-BC95-3FF628CF348B}.Debug|x64.Build.0 = Debug|x64
+		{6F519D43-56C0-45F0-BC95-3FF628CF348B}.Debug|x86.ActiveCfg = Debug|Win32
+		{6F519D43-56C0-45F0-BC95-3FF628CF348B}.Debug|x86.Build.0 = Debug|Win32
+		{6F519D43-56C0-45F0-BC95-3FF628CF348B}.Release|x64.ActiveCfg = Release|x64
+		{6F519D43-56C0-45F0-BC95-3FF628CF348B}.Release|x64.Build.0 = Release|x64
+		{6F519D43-56C0-45F0-BC95-3FF628CF348B}.Release|x86.ActiveCfg = Release|Win32
+		{6F519D43-56C0-45F0-BC95-3FF628CF348B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
