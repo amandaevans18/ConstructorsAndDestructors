@@ -20,10 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{A413EDA0-4D5B-4C6E-903F-55AF377961D7}</ProjectGuid>
-    <RootNamespace>DynamicArrays</RootNamespace>
+    <ProjectGuid>{8AEE7D49-7489-4C25-9160-A5BFE343D885}</ProjectGuid>
+    <RootNamespace>SpawnOnMouseDA</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
-    <ProjectName>DynamicArrays_Stacks_Queue</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -116,12 +115,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="tQueue.h" />
-    <ClInclude Include="tStack.h" />
-    <ClInclude Include="tVector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

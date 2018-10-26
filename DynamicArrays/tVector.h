@@ -32,19 +32,19 @@ public:
 
 
 	bool empty();         // Returns true if the vector contains no elements.
-	void resize(size_t);  // Resizes the vector to contain the given number of elements.
+	void resize(size_t newSize);  // Resizes the vector to contain the given number of elements.
 	void shrink_to_fit(); // Resizes the vector's capacity to match its size.
 	void clear();         // Empties the vector (all elements are destroyed in this process)
 };
 
 template<typename T>
-inline tVector<T>::tVector()
+ tVector<T>::tVector()
 {
 	
 }
 
 template<typename T>
-inline tVector<T>::~tVector()
+ tVector<T>::~tVector()
 {
 	arrCapacity = 0;
 	arrSize = 0;
@@ -52,16 +52,18 @@ inline tVector<T>::~tVector()
 }
 
 template<typename T>
-inline T * tVector<T>::data()
+ T * tVector<T>::data()
 {
-	return *arr;
+	return arr;
 }
 
 template<typename T>
-inline void tVector<T>::reserve(size_t newCapacity)
+ void tVector<T>::reserve(size_t newCapacity)
 {
 	if (size > newCapacity) 
 	{
+		std::cout << "Sorry thats what resize is for!!!" << std::endl;
+		system("PAUSE");
 		return; 
 	}
 	T *temp = new T[newCapacity]();
@@ -76,59 +78,58 @@ inline void tVector<T>::reserve(size_t newCapacity)
 			temp[i] = arr[i];
 		}
 	}
-
+	arrCapacity = newCapacity;
 	*arr = *temp;
 	delete temp;
 
 }
 
 template<typename T>
-inline void tVector<T>::push_back(const T & value)
+ void tVector<T>::push_back(const T & value)
 {
 	arrSize++;
 	if (arrCapacity <= arrSize ) 
 	{
-		reserve(arrCapacity + 1);
+		reserve(arrCapacity * GROWTH_FACTOR);
 	}
-	else
-	{
-		arr[arrSize] = value;
-	}
+	
+	arr[arrSize] = value;
+	
 }
 
 template<typename T>
-inline void tVector<T>::pop_back()
+ void tVector<T>::pop_back()
 {
-	arr[arrSize - 1] = NULL;
+	arrSize--;
 }
 
 template<typename T>
-inline T & tVector<T>::at(size_t index)
+ T & tVector<T>::at(size_t index)
 {
 	// TODO: insert return statement here
 	return arr[index];
 }
 
 template<typename T>
-inline size_t tVector<T>::size() const
+ size_t tVector<T>::size() const
 {
 	return arrSize;
 }
 
 template<typename T>
-inline size_t tVector<T>::capacity() const
+ size_t tVector<T>::capacity() const
 {
 	return arrCapacity;
 }
 
 template<typename T>
-inline tVector<T>::tVector(const tVector & vec)
+ tVector<T>::tVector(const tVector & vec)
 {
 	return arr = vec;
 }
 
 template<typename T>
-inline tVector<T> & tVector<T>::operator=(const tVector & vec)
+ tVector<T> & tVector<T>::operator=(const tVector & vec)
 {
 	// TODO: insert return statement her
 	for (size_t i = 0; i < arrCapacity; i++)
@@ -141,14 +142,14 @@ inline tVector<T> & tVector<T>::operator=(const tVector & vec)
 }
 
 template<typename T>
-inline T & tVector<T>::operator[](size_t index)
+ T & tVector<T>::operator[](size_t index)
 {
 	// TODO: insert return statement here
 	return arr.at(index);
 }
 
 template<typename T>
-inline bool tVector<T>::empty()
+ bool tVector<T>::empty()
 {
 	if (arrSize == 0)
 	{
@@ -161,17 +162,38 @@ inline bool tVector<T>::empty()
 }
 
 template<typename T>
-inline void tVector<T>::resize(size_t)
+ void tVector<T>::resize(size_t newSize)
 {
+	if (arrCapacity < newSize) 
+	{
+		T *temp = new T[arrCapacity]();
+		for (int i = 0; i < newSize; i++)
+		{
+			temp[i] = arr[i];
+		}
 
+		*arr = *temp;
+		arrSize = newSize;
+		delete temp;
+	}
+	else 
+	{
+		reserve(newSize);
+	}
 }
 
 template<typename T>
-inline void tVector<T>::shrink_to_fit()
+ void tVector<T>::shrink_to_fit()
 {
+	arrCapacity = arrSize;
 }
 
 template<typename T>
-inline void tVector<T>::clear()
+ void tVector<T>::clear()
 {
+	 for (size_t i = 0; i < arrSize; i++)
+	 {
+		 arr[i] = NULL;
+	 }
+	arrSize = 0;
 }
