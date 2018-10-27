@@ -20,6 +20,8 @@ public:
 	T& back();                            // returns the back-most element
 
 	size_t size() const;                  // returns current number of elements
+
+	size_t empty() const;
 };
 
 template<typename T>
@@ -35,13 +37,13 @@ template<typename T>
 template<typename T>
  void tQueue<T>::push(const T & value)
 {
+	 vec.push_back(value);
 }
 
 template<typename T>
  void tQueue<T>::pop()
 {
-	 vec.push_back();
-	 vec.resize();
+	 vec.pop_back();
 }
 
 template<typename T>
@@ -61,3 +63,9 @@ template<typename T>
 {
 	return vec.size();
 }
+
+ template<typename T>
+ inline size_t tQueue<T>::empty() const
+ {
+	 return vec.empty();
+ }

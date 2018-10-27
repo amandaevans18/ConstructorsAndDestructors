@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpawnOnMouse_DA", "SpawnOnM
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpellCaster", "SpellCaster\SpellCaster.vcxproj", "{FCCDC244-A9B7-4FC9-86A1-C1B2DE64F148}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedLists", "LinkedLists\LinkedLists.vcxproj", "{D53096A6-325E-4E67-995F-2C56C97B7501}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{FCCDC244-A9B7-4FC9-86A1-C1B2DE64F148}.Release|x64.Build.0 = Release|x64
 		{FCCDC244-A9B7-4FC9-86A1-C1B2DE64F148}.Release|x86.ActiveCfg = Release|Win32
 		{FCCDC244-A9B7-4FC9-86A1-C1B2DE64F148}.Release|x86.Build.0 = Release|Win32
+		{D53096A6-325E-4E67-995F-2C56C97B7501}.Debug|x64.ActiveCfg = Debug|x64
+		{D53096A6-325E-4E67-995F-2C56C97B7501}.Debug|x64.Build.0 = Debug|x64
+		{D53096A6-325E-4E67-995F-2C56C97B7501}.Debug|x86.ActiveCfg = Debug|Win32
+		{D53096A6-325E-4E67-995F-2C56C97B7501}.Debug|x86.Build.0 = Debug|Win32
+		{D53096A6-325E-4E67-995F-2C56C97B7501}.Release|x64.ActiveCfg = Release|x64
+		{D53096A6-325E-4E67-995F-2C56C97B7501}.Release|x64.Build.0 = Release|x64
+		{D53096A6-325E-4E67-995F-2C56C97B7501}.Release|x86.ActiveCfg = Release|Win32
+		{D53096A6-325E-4E67-995F-2C56C97B7501}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
