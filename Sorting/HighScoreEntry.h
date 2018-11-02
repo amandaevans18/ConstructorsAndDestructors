@@ -10,4 +10,11 @@ public:
 
 	HighScoreEntry();
 	~HighScoreEntry();
+
+	bool operator<(HighScoreEntry& entry);
+	bool operator>(HighScoreEntry& entry);
+	bool operator<=(HighScoreEntry& entry);
+	bool operator>=(HighScoreEntry& entry);
+
+	void clear();
 };
