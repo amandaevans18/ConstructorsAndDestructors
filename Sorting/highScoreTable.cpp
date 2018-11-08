@@ -48,7 +48,7 @@ void HighScoreTable::mergeSort(std::vector<HighScoreEntry> arr,size_t _firstInde
 	}
 }
 
-void HighScoreTable::Merge(std::vector<HighScoreEntry> arr,size_t _firstIndex, size_t _middleIndex, size_t _lastIndex)
+void HighScoreTable::Merge(std::vector<HighScoreEntry> arr, size_t _firstIndex, size_t _middleIndex, size_t _lastIndex)
 {
 	size_t leftEnd = _middleIndex - firstIndex + 1;
 	size_t rightEnd = lastIndex - _middleIndex;
@@ -74,13 +74,14 @@ void HighScoreTable::Merge(std::vector<HighScoreEntry> arr,size_t _firstIndex, s
 	size_t j = 0;
 
 	// for all values from p to r = k
-	// if (j >= rightEnd) OR
-	//    (i < leftEnd AND leftArray[i] <= rightArray[j]) then
-	// set A[k] to the value of leftArray[i]
-	// increase i by one
-	// else
-	// set A[k] = R[j]
-	// increase j by one
+	if ((j >= rightEnd) || (i < leftEnd && leftEndArr[i] <= rightEndArr[j]))
+	{
+		// set A[k] to the value of leftEndArr[i]
+		// increase i by one
+		// else
+		// set A[k] = R[j] 
+		// increase j by one
+	}
 }
 
 

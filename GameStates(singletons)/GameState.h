@@ -20,7 +20,7 @@ class GameState
 {
 private:
 	GStates cState = MainMenu;
-	GameState() {};
+	GameState(){};
 	GameState(GameState const&) {};  // pprevents external use
 	void operator=(GameState const&) {}; // prevents external use
 

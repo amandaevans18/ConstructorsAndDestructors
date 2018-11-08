@@ -1,5 +1,11 @@
 #pragma once
 #include"GameState.h"
+#include "raylib.h"
+#include<string>
+#include<iostream>
+#include"Player.h"
+#include"Pickup.h"
+#include"Enemy.h"
 class Game 
 {
 public:
